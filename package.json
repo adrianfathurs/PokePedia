@@ -2,7 +2,7 @@
   "name": "shards-dashboard-lite-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://adrianfathurs.github.io/PokePedia",
+  "homepage": "https://adrianfathurs.github.io/PokePedia/",
   "dependencies": {
     "axios": "^0.26.1",
     "bootstrap": "^5.1.3",
