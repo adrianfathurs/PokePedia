@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "752adf791ba2d179f269",
+    "revision": "24dc82db724875d713d8",
     "url": "/PokePedia/static/css/main.fd74142c.chunk.css"
   },
   {
-    "revision": "752adf791ba2d179f269",
-    "url": "/PokePedia/static/js/main.752adf79.chunk.js"
+    "revision": "24dc82db724875d713d8",
+    "url": "/PokePedia/static/js/main.24dc82db.chunk.js"
   },
   {
     "revision": "a3312767eff8e37b0f71",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/PokePedia/static/media/10.fe349e85.jpeg"
   },
   {
-    "revision": "be0c618a1124490a707d37da64d10eca",
+    "revision": "7f3439200fa5d7204cceef3f443f61d6",
     "url": "/PokePedia/index.html"
   }
 ];
