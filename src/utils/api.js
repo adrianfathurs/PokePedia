@@ -14,3 +14,6 @@ export const httpClient = axios.create({
 export const getPokemons = params => {
   return httpClient.get("/pokemon/", { params })
 }
+export const getPokemonByName = params => {
+  return httpClient.get("/pokemon/" + params)
+}
