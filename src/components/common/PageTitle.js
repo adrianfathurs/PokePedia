@@ -6,7 +6,6 @@ import { Col } from "shards-react";
 const PageTitle = ({ title, subtitle, className, ...attrs }) => {
   const classes = classNames(
     className,
-    "text-center",
     "text-md-left",
     "mb-sm-0"
   );
