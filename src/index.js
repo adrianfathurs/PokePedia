@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
+import { HashRouter } from "react-router-dom";
 
 
 const initialState = {
@@ -34,7 +35,9 @@ const rootReducer = (state = initialState , action) => {
 const store = createStore(rootReducer)
 ReactDOM.render(
 <Provider store={store}>
+   <HashRouter base="/">
 <App />
+   </HashRouter>
 </Provider>
 
 , document.getElementById('root'));
