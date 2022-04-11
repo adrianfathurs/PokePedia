@@ -18,7 +18,7 @@ import PokemonOverview from "./views/PokemonOverview";
 
 export default [
   {
-    path: "/",
+    path: "/PokePedia/",
     exact: true,
     layout: DefaultLayout,
     component: () => <Redirect to="/blog-overview" />
