@@ -21,7 +21,7 @@ export default [
     path: "/PokePedia",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/blog-overview" />
+    component: () => <Redirect to="/pokemon-list" />
   },
   {
     path: "/blog-overview",
