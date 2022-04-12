@@ -18,7 +18,7 @@ import PokemonOverview from "./views/PokemonOverview";
 
 export default [
   {
-    path: "/PokePedia",
+    path: "/",
     exact: true,
     layout: DefaultLayout,
     component: () => <Redirect to="/pokemon-list" />
