@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector} from 'react-redux'
 import {
   Card,
   CardHeader,
@@ -6,8 +7,10 @@ import {
   ListGroupItem,
   Badge,
 } from "shards-react";
+import '../../assets/css/PokeDetail.css';
 
 const PokemonDetail = ({pokemon}) => {
+  const poke_type_colors = useSelector((state)=> state.poke_type_colors)
   let universalData = (pokemon || {})
   let pokeMoves = (pokemon.moves || [])
   let pokeTypes = pokemon.types ? pokemon.types.map((item, index)=>{
@@ -22,27 +25,28 @@ const PokemonDetail = ({pokemon}) => {
         <ListGroup flush>
           <ListGroupItem className="p-3">
             <div className="d-flex align-items-center">
-              <h5 className="pr-2">Name:</h5>
-              <div className="pl-4">
-                <h5 className="text-bold"> {universalData.name}</h5>
+              <h5 className="text-bold">Name:</h5>
+              <div className="ml-2">
+                <h5 className=""> {universalData.name}</h5>
               </div>
             </div>
             <div className="d-flex align-items-center">
-              <h5 className="pr-2">Base Experience:</h5>
-              <h5 className="text-bold"> {universalData.base_experience}</h5>
+              <h5 className="text-bold">Base Experience:</h5>
+              <h5 className="ml-1"> {universalData.base_experience}</h5>
             </div>
             <div className="d-flex align-items-center">
-              <h5 className="pr-2">Weight:</h5>
-              <h5 className="text-bold"> {universalData.weight}</h5>
+              <h5 className="text-bold">Weight:</h5>
+              <h5 className="ml-2"> {universalData.weight}</h5>
             </div>
             <div className="d-flex align-items-center">
-              <h5 className="pr-2">Types:</h5>
+              <h5 className="text-bold">Types:</h5>
               {pokeTypes.map((poke,idx) => (
                 <Badge
-                  className="mx-2 my-2" 
+                  className="ml-2 my-2" 
                   key={idx} 
                   pill 
                   theme="info"
+                  style={{backgroundColor: poke_type_colors[poke.name] }}
                   >
                   {poke.name}
                 </Badge>
