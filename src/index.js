@@ -9,18 +9,22 @@ import {Provider} from 'react-redux'
 
 
 const initialState = {
-  tooltip: true,
+  tooltip: false,
   modal: false,
+  pokeId: null,
+  pokeName: "",
+  myPokemon: localStorage.getItem('pokemon') ? JSON.parse(localStorage.getItem('pokemon')) : [],
 }
 const rootReducer = (state = initialState , action) => {
   if(action.type === "HANDLE_MODAL_TOOLTIP") {
       let number = Math.floor(Math.random() * 10);
-      console.log(number)
       if(number > 5){
         return {
           ...state,
           tooltip: !action.value,
-          modal: action.value
+          modal: action.value,
+          pokeId: action.pokeId,
+          pokeName: action.pokeName,
         }
       }
       return {
@@ -29,8 +33,31 @@ const rootReducer = (state = initialState , action) => {
         modal: false
       }
     }
+  else if (action.type === "HANDLE_CLOSE_MODAL"){
+    return {
+      ...state, 
+      modal: action.value
+    }
+  }
+  else if (action.type === "HANDLE_ADD_MY_POKEMON") {
+    return {
+      ...state,
+      myPokemon: [...state.myPokemon, action.myPokemon]
+    }
+  }
+  else if (action.type === "HANDLE_REMOVE_MY_POKEMON") {
+    const cloneMyPokemon = [...state.myPokemon]
+    cloneMyPokemon.splice(action.index, 1)
+    return {
+      ...state,
+      myPokemon: cloneMyPokemon
+    }
+  }
   return state
 }
+
+
+
 
 const store = createStore(rootReducer)
 ReactDOM.render(
