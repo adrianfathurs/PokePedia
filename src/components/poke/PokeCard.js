@@ -1,8 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Carousel from 'react-bootstrap/Carousel'
 import {connect} from 'react-redux'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import '../../assets/css/PokeCard.css'
 import {
@@ -34,6 +33,7 @@ const PokeCard = ( {pokemon} ) => {
               className="d-block w-100"
               src={pokeSprites ? pokeSprites : "https://dummyimage.com/600x600/000/5f63a3" }
               fluid="true"
+              alt="dummyImage"
               />
           </Carousel.Item>
         ))}

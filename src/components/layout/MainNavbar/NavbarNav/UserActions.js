@@ -1,13 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Collapse,
   NavItem,
-  NavLink
 } from "shards-react";
 
 export default class UserActions extends React.Component {

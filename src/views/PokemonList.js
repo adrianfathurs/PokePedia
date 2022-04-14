@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from "react";
-import PropTypes from "prop-types";
 import { Container, Row, Col, Card, CardBody, Button } from "shards-react";
-import { useHistory } from "react-router-dom";
 import PageTitle from "./../components/common/PageTitle";
 import  { getPokemons } from "../utils/api"
 

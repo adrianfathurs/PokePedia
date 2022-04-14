@@ -2,10 +2,8 @@ import React from "react"
 import {
   Toast,
   ToastContainer,
-  ToastHeader,
-  ToastBody 
 } from 'react-bootstrap'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import '../../assets/css/PokeTooltip.css'
 
 const PokeTooltip = () => {
