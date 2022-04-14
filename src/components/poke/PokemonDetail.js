@@ -7,7 +7,6 @@ import {
   ListGroupItem,
   Badge,
 } from "shards-react";
-import '../../assets/css/PokeDetail.css';
 
 const PokemonDetail = ({pokemon}) => {
   const poke_type_colors = useSelector((state)=> state.poke_type_colors)
