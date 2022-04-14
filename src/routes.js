@@ -15,6 +15,7 @@ import BlogPosts from "./views/BlogPosts";
 
 import PokemonList from "./views/PokemonList";
 import PokemonOverview from "./views/PokemonOverview";
+import MyPokemonList from "./views/MyPokemonList";
 
 export default [
   {
@@ -62,6 +63,11 @@ export default [
     path: "/pokemon-list",
     layout: DefaultLayout,
     component: PokemonList
+  },
+  {
+    path: "/my-pokemon-list",
+    layout: DefaultLayout,
+    component: MyPokemonList
   },
   {
     exact: true,
