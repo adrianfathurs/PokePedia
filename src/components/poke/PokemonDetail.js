@@ -9,7 +9,6 @@ import {
 } from "shards-react";
 
 const PokemonDetail = ({pokemon}) => {
-  console.log(pokemon)
   let universalData = (pokemon || {})
   let pokeMoves = (pokemon.moves || [])
   let pokeTypes = pokemon.types ? pokemon.types.map((item, index)=>{

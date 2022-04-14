@@ -11,7 +11,6 @@ const PokemonOverview = ({ match }) => {
   const [pokemon, setPokemon] = useState({})
   const getPokemonByNameData =  async() => {
     try {
-      console.log(match.params)
       let response = await getPokemonByName(match.params.name)
       setPokemon(response.data)
     } catch (error) {

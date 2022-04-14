@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col, Card, CardBody, Button } from "shards-react";
-import { Route } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import PageTitle from "./../components/common/PageTitle";
 import  { getPokemons } from "../utils/api"
 
@@ -13,7 +13,6 @@ const PokemonList = ({ smallStats, history }) => {
     try {
       let params = number === undefined ? { limit: 20, offset: 0 } :  { limit: number, offset: number }
       let response = await getPokemons(params);
-      console.log(response.data.results)
       setPokemons(pokemons.concat(response.data.results))
       setPokemonsCount(response.data.count)
     } catch (error) {

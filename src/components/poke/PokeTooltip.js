@@ -10,7 +10,6 @@ import '../../assets/css/PokeTooltip.css'
 
 const PokeTooltip = () => {
   let statusTooltip = useSelector((state) => state.tooltip)
-  console.log("ini Tooltip", statusTooltip)
     return (
         <>
           <div
@@ -19,7 +18,7 @@ const PokeTooltip = () => {
             className="position-relative"
           >
             <ToastContainer className="p-3" position="top-end">
-              <Toast show={!statusTooltip}>
+              <Toast show={statusTooltip}>
                 <Toast.Header closeButton={false}>
                   <img
                     src="holder.js/20x20?text=%20"

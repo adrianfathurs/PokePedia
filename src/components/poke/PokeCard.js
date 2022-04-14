@@ -12,8 +12,6 @@ import {
 } from "shards-react";
 
 const PokeCard = ( {pokemon} ) => {
-  
-  console.log(pokemon)
   let data = (pokemon.sprites || {});
   let pokemonSprites = [
     data.back_default,
@@ -25,8 +23,6 @@ const PokeCard = ( {pokemon} ) => {
     data.front_shiny,
     data.front_shiny_female, 
   ]
-  let modal = useSelector((state) => state.modal)
-  console.log(modal,"ini state")
   const dispatch = useDispatch()
   return(
   <Card small className="mb-4 pt-3">
@@ -42,7 +38,7 @@ const PokeCard = ( {pokemon} ) => {
           </Carousel.Item>
         ))}
       </Carousel>
-      <Button pill outline size="sm" onClick={()=>dispatch({type:'HANDLE_MODAL_TOOLTIP', value:true})} className="mb-2">
+      <Button pill outline size="sm" onClick={()=>dispatch({type:'HANDLE_MODAL_TOOLTIP', value:true, pokeId: pokemon.id, pokeName: pokemon.name })} className="mb-2">
         <i className="material-icons mr-1">catching_pokemon</i> Catch Pokemon
       </Button>
       
