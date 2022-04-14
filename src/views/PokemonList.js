@@ -31,14 +31,12 @@ const PokemonList = ({ smallStats, history }) => {
 
     {/*Count All Pokemons */}
     <Row>
-      <Col lg="3" md="6" sm="12" className="col-sm mb-4">
+      <Col lg="1" md="6" sm="12" className="col-sm mb-1">
         <Card small className="card card-1">
             <CardBody>
-              <h5 className="card-title">
+              <h5 className="card-title d-flex align-items-center">
                 {pokemonsCount}
               </h5>
-              <p className="card-text d-inline-block mb-3"> </p>
-              <span className="text-muted"></span>
             </CardBody>
           </Card>
       </Col>
