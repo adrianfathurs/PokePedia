@@ -19,7 +19,7 @@ import MyPokemonList from "./views/MyPokemonList";
 
 export default [
   {
-    path: "/",
+    path: "/PokePedia",
     exact: true,
     layout: DefaultLayout,
     component: () => <Redirect to="/pokemon-list" />
