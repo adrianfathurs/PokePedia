@@ -54,7 +54,7 @@ const MyPokemonList = ({history}) => {
                     <td>
                       <div className='mx-auto'>
                       <Button outline onClick={() => { history.push('/pokemon-overview/' + poke.pokeName) }}>Go To Detail Poke</Button>
-                      <Button outline theme="danger" onClick={() => handleRelease(index)}> Release </Button>
+                      <Button outline theme="danger" className="ml-2 mt-1" onClick={() => handleRelease(index)}> Release </Button>
                       </div>
                     </td>
                   </tr>
