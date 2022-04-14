@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/PokePedia/precache-manifest.935b6f7a096e9cbbccd3b885ed2ea0e6.js"
+  "/PokePedia/precache-manifest.d0d091ab2365ffe1ad82378ab7797ec3.js"
 );
 
 workbox.clientsClaim();

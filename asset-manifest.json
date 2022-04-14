@@ -1,7 +1,7 @@
 {
   "main.css": "/PokePedia/static/css/main.a43c536a.chunk.css",
-  "main.js": "/PokePedia/static/js/main.17029689.chunk.js",
-  "main.js.map": "/PokePedia/static/js/main.17029689.chunk.js.map",
+  "main.js": "/PokePedia/static/js/main.5eae3ce9.chunk.js",
+  "main.js.map": "/PokePedia/static/js/main.5eae3ce9.chunk.js.map",
   "static/css/1.d7199f18.chunk.css": "/PokePedia/static/css/1.d7199f18.chunk.css",
   "static/js/1.55d19705.chunk.js": "/PokePedia/static/js/1.55d19705.chunk.js",
   "static/js/1.55d19705.chunk.js.map": "/PokePedia/static/js/1.55d19705.chunk.js.map",
@@ -19,9 +19,9 @@
   "static/media/8.jpeg": "/PokePedia/static/media/8.10b775cc.jpeg",
   "static/media/9.jpeg": "/PokePedia/static/media/9.565ad4a3.jpeg",
   "static/media/10.jpeg": "/PokePedia/static/media/10.fe349e85.jpeg",
-  "static/css/1.d7199f18.chunk.css.map": "/PokePedia/static/css/1.d7199f18.chunk.css.map",
   "static/css/main.a43c536a.chunk.css.map": "/PokePedia/static/css/main.a43c536a.chunk.css.map",
+  "static/css/1.d7199f18.chunk.css.map": "/PokePedia/static/css/1.d7199f18.chunk.css.map",
   "index.html": "/PokePedia/index.html",
-  "precache-manifest.935b6f7a096e9cbbccd3b885ed2ea0e6.js": "/PokePedia/precache-manifest.935b6f7a096e9cbbccd3b885ed2ea0e6.js",
+  "precache-manifest.d0d091ab2365ffe1ad82378ab7797ec3.js": "/PokePedia/precache-manifest.d0d091ab2365ffe1ad82378ab7797ec3.js",
   "service-worker.js": "/PokePedia/service-worker.js"
 }
